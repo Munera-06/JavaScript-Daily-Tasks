@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-display {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="mt-5 ml-5 border-8 border-opacity-10 px-3 py-4 w-52 rounded-3xl">
+            <div class="h-12 bg-gray-300 text-black text-right text-2xl p-4 mb-4 overflow-hidden">
+                <input id="heading-one" value="0" readonly class="w-full bg-gray-300 text-right text-2xl">
+            </div>
+
+            <div>
+                <div class="grid grid-cols-4 py-2 gap-2 text-black font-medium">
+                    <button onclick="sc_clear()" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">C</button>
+                    <button onclick="num_value('(')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">(</button>
+                    <button onclick="num_value(')')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">)</button>
+                    <button onclick="num_value('/')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">/</button>
+                </div>
+
+                <div class="grid grid-cols-4 py-2 gap-2 text-black font-medium">
+                    <button onclick="num_value(7)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">7</button>
+                    <button onclick="num_value(8)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">8</button>
+                    <button onclick="num_value(9)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">9</button>
+                    <button onclick="num_value('*')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">X</button>
+                </div>
+
+                <div class="grid grid-cols-4 py-2 gap-2 text-black font-medium overflow-hidden">
+                    <button onclick="num_value(4)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">4</button>
+                    <button onclick="num_value(5)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">5</button>
+                    <button onclick="num_value(6)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">6</button>
+                    <button onclick="num_value('-')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">-</button>
+                </div>
+
+                <div class="grid grid-cols-4 py-2 gap-2 text-black font-medium">
+                    <button onclick="num_value(1)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">1</button>
+                    <button onclick="num_value(2)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">2</button>
+                    <button onclick="num_value(3)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">3</button>
+                    <button onclick="num_value('+')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">+</button>
+                </div>
+
+                <div class="grid grid-cols-3 py-2 gap-2 text-black font-medium">
+                    <button onclick="num_value(0)" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">0</button>
+                    <button onclick="num_value('.')" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">.</button>
+                    <button onclick="sc_equal()" class="bg-gray-300 h-10 rounded-2xl hover:-translate-y-2 transition duration-200">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
