@@ -1,6 +1,6 @@
 # Day 14 – JavaScript Loop Programs 2
 
-## Project Overview
+## Project Overview 
 
 This project contains JavaScript loop practice programs created as part of my daily learning journey. These tasks focus on number patterns, summation, and printing even and odd numbers.
 
