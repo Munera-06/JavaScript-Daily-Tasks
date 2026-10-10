@@ -22,7 +22,7 @@ Day_18_Tasks/
 
 ## Tasks
 
-### 1. Ascending Order
+### 1. Ascending Order 
 
 * Sorts the elements of an array in ascending order.
 * Arranges numbers from the smallest to the largest.
