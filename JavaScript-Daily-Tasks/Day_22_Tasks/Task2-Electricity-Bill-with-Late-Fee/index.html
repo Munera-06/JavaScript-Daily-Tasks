@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Bill with Late Fee</title>
+</head>
+<body>
+
+    <h2>Electricity Bill Calculator</h2>
+
+    <label>Units Consumed:</label>
+    <input type="number" id="units" placeholder="Enter units">
+
+    <br><br>
+
+    <label>Payment Status:</label>
+    <select id="status">
+        <option value="ontime">Paid on Time</option>
+        <option value="late">Late Payment</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
