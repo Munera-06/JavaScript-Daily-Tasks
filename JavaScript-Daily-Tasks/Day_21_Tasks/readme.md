@@ -13,7 +13,7 @@ Day_21_Tasks/
 ├── Task1-Number-Pyramid/
 └── Task2-Electricity-Bill-Calculator/
 ```
-
+  
 ## Tasks
 
 ### 1. Number Pyramid
