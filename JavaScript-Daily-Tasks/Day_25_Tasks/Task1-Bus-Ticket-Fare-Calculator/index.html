@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Fare Calculator</title>
+</head>
+<body>
+    <h2>Bus Ticket Fare Calculator</h2>
+
+    <label>Passenger Name:</label>
+    <input type="text" id="passenger"><br><br>
+
+    <label>Distance (km):</label>
+    <input type="number" id="distance"><br><br>
+
+    <label>Number of Passengers:</label>
+    <input type="number" id="count"><br><br>
+
+    <label>Passenger Type:</label>
+    <select id="passengerType">
+        <option value="">Choose Type</option>
+        <option value="adult">Adult</option>
+        <option value="child">Child</option>
+        <option value="senior">Senior Citizen</option>
+    </select><br><br>
+
+    <label>Bus Type:</label>
+    <select id="busType">
+        <option value="">Choose Bus</option>
+        <option value="ordinary">Ordinary</option>
+        <option value="express">Express</option>
+        <option value="ac">AC Bus</option>
+    </select><br><br>
+
+    <button onclick="calculateFare()">Calculate Fare</button>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
