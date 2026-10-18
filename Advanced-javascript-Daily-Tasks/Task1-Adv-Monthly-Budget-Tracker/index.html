@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Monthly Budget Tracker</h1>
+        <p>Manage your income, expenses and savings</p>
+    </header>
+
+    <main>
+        <section class="settings">
+            <div class="field">
+                <label for="income">Monthly Income (₹)</label>
+                <input type="number" id="income" min="0" placeholder="Enter income">
+            </div>
+
+            <div class="field">
+                <label for="budgetLimit">Expense Budget Limit (₹)</label>
+                <input type="number" id="budgetLimit" min="0" placeholder="Enter budget limit">
+            </div>
+
+            <button onclick="saveSettings()">Save Budget</button>
+        </section>
+
+        <section class="summary">
+            <div class="card">
+                <h3>Monthly Income</h3>
+                <p id="totalIncome">₹0.00</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="totalExpenses">₹0.00</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="balance">₹0.00</p>
+            </div>
+
+            <div class="card">
+                <h3>Savings Rate</h3>
+                <p id="savingsRate">0%</p>
+            </div>
+        </section>
+
+        <section class="budget-section">
+            <h2>Budget Usage</h2>
+            <div class="progress-background">
+                <div id="progressBar"></div>
+            </div>
+            <p id="budgetMessage">Set your budget to track expenses.</p>
+        </section>
+
+        <section class="expense-form">
+            <h2>Add New Expense</h2>
+
+            <div class="form-grid">
+                <div class="field">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" placeholder="Example: Grocery shopping">
+                </div>
+
+                <div class="field">
+                    <label for="amount">Amount (₹)</label>
+                    <input type="number" id="amount" min="0.01" step="0.01" placeholder="Enter amount">
+                </div>
+
+                <div class="field">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">Select category</option>
+                        <option value="Food">Food</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Health">Health</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="expenseDate">Date</label>
+                    <input type="date" id="expenseDate">
+                </div>
+            </div>
+
+            <button onclick="addExpense()">Add Expense</button>
+            <p id="formMessage"></p>
+        </section>
+
+        <section class="history">
+            <h2>Expense History</h2>
+
+            <div class="filters">
+                <input type="text" id="search" placeholder="Search expenses..." oninput="renderApp()">
+
+                <select id="filterCategory" onchange="renderApp()">
+                    <option value="All">All Categories</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Health">Health</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseList"></tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage">No expenses added yet.</p>
+        </section>
+
+        <section class="categories">
+            <h2>Category-wise Spending</h2>
+            <div id="categorySummary"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
