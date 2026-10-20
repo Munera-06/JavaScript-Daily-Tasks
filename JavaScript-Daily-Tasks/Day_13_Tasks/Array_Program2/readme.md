@@ -4,6 +4,7 @@
 
 This project contains JavaScript array practice programs created as part of my daily learning journey. These tasks focus on basic array operations, calculations, and element handling.
 
+
 ## Technologies Used
 
 * HTML5
