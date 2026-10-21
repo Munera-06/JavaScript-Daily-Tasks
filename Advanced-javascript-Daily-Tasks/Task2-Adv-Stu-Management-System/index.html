@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Student Management System</h1>
+            <p>Manage student details and academic performance</p>
+        </header>
+
+        <section class="dashboard">
+            <div class="card"><h3>Total Students</h3><p id="totalStudents">0</p></div>
+            <div class="card"><h3>Passed</h3><p id="passedStudents">0</p></div>
+            <div class="card"><h3>Failed</h3><p id="failedStudents">0</p></div>
+            <div class="card"><h3>Class Average</h3><p id="classAverage">0%</p></div>
+        </section>
+
+        <section class="panel">
+            <h2 id="formTitle">Add Student</h2>
+            <form id="studentForm">
+                <div class="form-grid">
+                    <label>Student ID
+                        <input id="studentId" required placeholder="S101">
+                    </label>
+                    <label>Student Name
+                        <input id="studentName" required placeholder="Enter name">
+                    </label>
+                    <label>Class
+                        <input id="studentClass" required placeholder="BSc CS">
+                    </label>
+                    <label>Subject 1 Mark
+                        <input id="mark1" type="number" min="0" max="100" required>
+                    </label>
+                    <label>Subject 2 Mark
+                        <input id="mark2" type="number" min="0" max="100" required>
+                    </label>
+                    <label>Subject 3 Mark
+                        <input id="mark3" type="number" min="0" max="100" required>
+                    </label>
+                </div>
+                <div class="actions">
+                    <button type="submit" id="submitButton">Add Student</button>
+                    <button type="button" class="secondary" id="clearButton">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Student Records</h2>
+            <div class="filters">
+                <input id="searchInput" placeholder="Search ID or name">
+                <select id="resultFilter">
+                    <option value="all">All Results</option>
+                    <option value="Pass">Passed</option>
+                    <option value="Fail">Failed</option>
+                </select>
+                <select id="sortOption">
+                    <option value="id">Sort by ID</option>
+                    <option value="name">Sort by Name</option>
+                    <option value="high">Average: High to Low</option>
+                    <option value="low">Average: Low to High</option>
+                </select>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>Name</th><th>Class</th>
+                            <th>Total</th><th>Average</th><th>Grade</th>
+                            <th>Status</th><th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTable"></tbody>
+                </table>
+            </div>
+            <p id="emptyMessage">No student records found.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
