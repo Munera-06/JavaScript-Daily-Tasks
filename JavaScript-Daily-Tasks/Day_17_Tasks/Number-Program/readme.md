@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project contains JavaScript number-based practice programs created as part of my daily learning journey. These tasks focus on mathematical operations, number sequences, and checking number properties.
+This project contains JavaScript number-based practice programs created as part of my daily learning journey. These tasks focus on mathematical operations, number sequences, and checking number properties.  
 
 ## Technologies Used
 
