@@ -3,7 +3,7 @@ const table = document.getElementById("studentTable");
 
 let students = JSON.parse(localStorage.getItem("studentRecords")) || [];
 let editingId = null;
-
+ 
 function calculateResult(marks) {
     const total = marks.reduce((sum, mark) => sum + mark, 0);
     const average = total / marks.length;
