@@ -32,11 +32,11 @@ Task3-Adv-To-do-Manager/
 
 ## 📸 Output Screenshots
 
-### To-do Manager – Main Interface
-![To-do Manager Output 1](./Output-Screenshots/screenshot1.png)
+<img width="1385" height="716" alt="Screenshot 2026-11-09 234553" src="https://github.com/user-attachments/assets/469c3863-0a33-4d42-adf2-7ede9b5c0a52" />
+<img width="1383" height="723" alt="Screenshot 2026-11-09 234605" src="https://github.com/user-attachments/assets/dc82fce7-2d06-4058-9125-87541c16b3c2" />
+<img width="1380" height="720" alt="Screenshot 2026-11-09 234625" src="https://github.com/user-attachments/assets/96c04432-dca7-4ba2-9c73-c447cbcd4bb9" />
+<img width="1383" height="730" alt="Screenshot 2026-11-09 234637" src="https://github.com/user-attachments/assets/e0451afa-084f-4789-9a42-beb1cdbd2862" />
 
-### To-do Manager – Task Management
-![To-do Manager Output 2](./Output-Screenshots/screenshot2.png)
 
 ## ⚙️ How to Run the Project
 1. Clone or download the repository.
