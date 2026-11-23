@@ -14,7 +14,7 @@ This project contains JavaScript practice tasks created as part of my daily lear
 ```text
 Day_16_Tasks/
 ├── index.html
-├── script.js
+├── script.js 
 └── Output/
 ```
 
